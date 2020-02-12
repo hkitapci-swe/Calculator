@@ -1,0 +1,39 @@
+language: python
+
+python:
+  - "2.7"
+
+env:
+  global:
+    - PRODUCT=flask-app
+    - FLASK_DIR=/opt/flask-app
+
+before_install:
+  - export VERSION=1.$(date "+%Y%m%d").$TRAVIS_BUILD_NUMBER
+  - echo "Build version=$VERSION"
+
+install:
+  - pip --version
+
+before_script:
+  - export PATH=$PATH:$HOME/.local/bin
+
+script:
+  - echo "$VERSION" > VERSION
+  - git rev-parse HEAD > REVISION
+
+after_success:
+  - echo "Build successful. TRAVIS_TEST_RESULT=$TRAVIS_TEST_RESULT"
+
+after_failure:
+  - echo "Build failed. TRAVIS_TEST_RESULT=$TRAVIS_TEST_RESULT"
+
+deploy:
+  # Upload the build to the repository
+  - provider: script 
+    script: echo "Uploading files..."
+    on:
+      condition: '-n "$CREDENTIALS"' 
+
+after_script:
+  - echo "Run integrations or functional tests"
