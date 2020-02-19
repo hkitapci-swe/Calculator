@@ -2,10 +2,10 @@
 
 [![Build Status](https://travis-ci.org/hkitapci-swe/Calculator.svg?branch=master)](https://travis-ci.org/hkitapci-swe/Calculator)
 
-https://img.shields.io/github/v/release/hkitapci-swe/Calculator
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/hkitapci-swe/Calculator)](https://github.com/hkitapci-swe/Calculator/releases)
 
-https://img.shields.io/github/issues/hkitapci-swe/Calculator
+[![GitHub issues](https://img.shields.io/github/issues/hkitapci-swe/Calculator)](https://github.com/hkitapci-swe/Calculator/issues)
 
-https://img.shields.io/github/forks/hkitapci-swe/Calculator
+[![GitHub forks](https://img.shields.io/github/forks/hkitapci-swe/Calculator)](https://github.com/hkitapci-swe/Calculator/network)
 
-https://img.shields.io/github/stars/hkitapci-swe/Calculator
+[![GitHub stars](https://img.shields.io/github/stars/hkitapci-swe/Calculator)](https://github.com/hkitapci-swe/Calculator/stargazers)
